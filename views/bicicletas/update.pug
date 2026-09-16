@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  h1 Editar bicicleta
+  form.formulario(method="post", action="/bicicletas/" + bici.id + "/update")
+    label(for="id") ID
+    input#id(type="number", name="id", value=bici.id, required)
+    label(for="color") Color
+    input#color(type="text", name="color", value=bici.color, required)
+    label(for="modelo") Modelo
+    input#modelo(type="text", name="modelo", value=bici.modelo, required)
+    label(for="lat") Latitud
+    input#lat(type="number", step="any", name="lat", value=bici.ubicacion ? bici.ubicacion[0] : '', required)
+    label(for="lng") Longitud
+    input#lng(type="number", step="any", name="lng", value=bici.ubicacion ? bici.ubicacion[1] : '', required)
+    button.btn(type="submit") Guardar cambios
+    a(href="/bicicletas") Cancelar

@@ -1,0 +1,19 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= title || 'Red Bicicletas'
+    link(rel="stylesheet", href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+  body
+    header.topbar
+      a.brand(href="/") Red Bicicletas
+      nav
+        a(href="/") Inicio
+        a(href="/bicicletas") Bicicletas
+        a(href="/api/bicicletas") API
+    main.container
+      block content
+    footer.footer
+      p Proyecto Modulo 1 - Node.js + Express

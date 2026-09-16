@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 ¡Bienvenido a Red Bicicletas!
+  p.lead Este es el mensaje de bienvenida de tu aplicacion Express. Aqui puedes ver el mapa de la ciudad y las bicicletas disponibles.
+  #main_map
+  script(src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js")
+  script(src="/javascripts/map.js")

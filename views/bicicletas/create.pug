@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  h1 Agregar bicicleta
+  form.formulario(method="post", action="/bicicletas/create")
+    label(for="id") ID
+    input#id(type="number", name="id", required)
+    label(for="color") Color
+    input#color(type="text", name="color", required)
+    label(for="modelo") Modelo
+    input#modelo(type="text", name="modelo", required)
+    label(for="lat") Latitud
+    input#lat(type="number", step="any", name="lat", placeholder="-34.6012", required)
+    label(for="lng") Longitud
+    input#lng(type="number", step="any", name="lng", placeholder="-58.3861", required)
+    button.btn(type="submit") Guardar
+    a(href="/bicicletas") Cancelar
