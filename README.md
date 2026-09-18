@@ -13,7 +13,7 @@ REQUISITOS
 INSTALACION
 -----------
 1. Clonar el repositorio:
-   git clone <url-del-repositorio-bitbucket>
+   git clone https://github.com/jareth8ls1920-source/SistemaOperativosModulo1.git
 2. Entrar a la carpeta del proyecto e instalar dependencias:
    npm install
 
